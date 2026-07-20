@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.4 (14) - Balanced sidebar search
+_Date: 2026-07-20_
+
+- The sidebar search field now follows the panel's rounded top edge with balanced spacing while retaining native live filtering, clearing, focus, and accessibility behavior.
+
 ## 1.1.3 (13) - Activation banner and installer privacy
 _Date: 2026-07-20_
 
