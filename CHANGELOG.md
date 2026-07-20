@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.3 (13) - Activation banner and installer privacy
+_Date: 2026-07-20_
+
+- The activation-required notice now reserves space above the sidebar, main view, and inspector instead of covering their content.
+- Installer metadata no longer retains creator-local build paths.
+
 ## 1.1.2 (12) - Deterministic startup failures
 _Date: 2026-07-20_
 
