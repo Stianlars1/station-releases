@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2 (12) - Deterministic startup failures
+_Date: 2026-07-20_
+
+- Apps that exit before becoming ready are now consistently marked as failed.
+- Late terminal callbacks can no longer start dependents or overwrite a failed startup state.
+
 ## 1.1.1 (11) - Reliable shell startup
 _Date: 2026-07-20_
 
