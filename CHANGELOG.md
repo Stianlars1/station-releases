@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.1 (10) - Safer project workflows
+_Date: 2026-07-20_
+
+- Added project discovery and atomic stack import for Node, Python, and Docker Compose projects.
+- Added Quick Open with `Command-K` for apps, groups, views, and safe runtime commands.
+- Added redacted support reports that can be reviewed, copied, or exported as Markdown or JSON from AI Doctor.
+- Kept existing setups available for inspection when activation is required while locking edits, process control, and repairs.
+- Added explicit confirmation and process identity checks before Station can stop external processes, while Global stop now preserves them.
+- Added an evidence review step before AI Doctor sends redacted diagnostics to the configured provider and tightened repair boundaries.
+- Fixed license activation, device linking, private server errors, and a Keychain read that could block the app during startup.
+- Hardened checkout, webhooks, public license APIs, release metadata, and stable-release promotion against replay, stale events, and inconsistent state.
+- Aligned the macOS app, website, localization catalog, and shared design system, including responsive navigation and clearer support guidance.
+
 ## 1.0 (9) - Polished installer
 _Date: 2026-07-03_
 
