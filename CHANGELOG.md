@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1 (11) - Reliable shell startup
+_Date: 2026-07-20_
+
+- Fixed service and dependency startup on clean macOS accounts that do not yet have a readable `.zshrc` file.
+- Shell configuration errors no longer prevent Station from launching the configured project command.
+
 ## 1.1 (10) - Safer project workflows
 _Date: 2026-07-20_
 
