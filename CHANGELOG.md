@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.2.0 (15) - Reliable runtimes and flexible setups
+_Date: 2026-07-28_
+
+- Fixed Docker detection for apps launched from Finder and added cancellable startup guidance when Docker is unavailable, slow, or not responding.
+- Made grouped stop operations terminate Station-owned process groups, preserve genuinely shared or external services, and report per-app progress and outcomes.
+- Added automatic local troubleshooting after runtime failures, with structured evidence and reviewable AI Doctor configuration proposals that are never saved without approval.
+- Improved app details with labeled, selectable metadata, copy actions, Finder access, readable command formatting, and separate running and health states.
+- Added nested drag-and-drop groups with recursive start and stop behavior.
+- Added four deliberate dependency-display presets: pixel-aligned Trace, a calm curved Flow, line-free Signals, and line-free Highlights.
+- Dependency relationships now stay anchored to the selected app, support both directions and right-to-left layouts, and scale with the app's text zoom without flickering between rows.
+- Made the Settings window resizable and gave every pane a consistent size, so switching tabs no longer resizes the window and taller panes no longer need scrolling at a fixed height.
+- Added a Settings notice when a locally built, unreleased version is running, explaining why update checks still report that Station is up to date.
+- Added user-selected app setup export locations, visible saved paths, Finder reveal, and validated import with a replacement preview and confirmation.
+- Added complete localization for the new runtime, troubleshooting, hierarchy, dependency, and setup-transfer experiences across all 14 supported languages.
+- Kept XCTest hosts hidden and isolated from user catalogs and preferences, and corrected inspector sizing in right-to-left layouts.
+
 ## 1.1.4 (14) - Balanced sidebar search
 _Date: 2026-07-20_
 
