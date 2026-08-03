@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.5 (21) - Reliable runtime ownership
+_Date: 2026-08-03_
+
+- Docker containers started by Station now remain Station-owned after the short-lived Docker command exits, so global and per-app stop actions stop the configured container reliably.
+- Startup results now count only apps that actually reached a running state, exclude preserved external apps, and update when a launched app later exits or fails.
+- Docker stop failures are now reported as failures instead of being shown as successful stops.
+
 ## 1.2.4 (20) - Explicit external stops
 _Date: 2026-08-03_
 
