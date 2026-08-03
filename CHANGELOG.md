@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.4 (20) - Explicit external stops
+_Date: 2026-08-03_
+
+- External Docker apps can now be stopped from their app card, detail view, or toolbar after explicit confirmation, even when Docker does not expose a direct port process to Station.
+- The global stop action continues to preserve external processes and reports them separately.
+
 ## 1.2.3 (19) - Reliable concurrent commands
 _Date: 2026-08-03_
 
