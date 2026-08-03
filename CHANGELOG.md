@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.1 (16) - Reliable stack startup
+_Date: 2026-08-03_
+
+- Starting a stack now asks before stopping processes that occupy required ports, then revalidates each PID, port, and working directory before Station takes control.
+- Configured Docker containers that are already running are adopted as healthy external dependencies instead of being reported as foreign port conflicts.
+- Apps that share a working directory no longer create false port-mismatch errors for each other.
+- Terminal sessions start at a usable width and no longer load interactive shell startup prompts, preventing broken line wrapping and blocked launches.
+- Keeping a migrated setup is remembered across launches, and a previously exported app setup can now be imported directly during first-time setup.
+
 ## 1.2.0 (15) - Reliable runtimes and flexible setups
 _Date: 2026-07-28_
 
