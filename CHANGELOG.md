@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.6 (22) - Reliable Docker ownership
+_Date: 2026-08-03_
+
+- Docker containers started by Station now retain Station ownership even when the background health monitor observes the container before startup readiness completes.
+- Station continues to own and can stop a container when its process is running but its readiness check fails.
+
 ## 1.2.5 (21) - Reliable runtime ownership
 _Date: 2026-08-03_
 
