@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.2 (18) - Live stack progress
+_Date: 2026-08-03_
+
+- Stack startup now reports live completed and total app counts, including dependencies that Station safely preserves as external processes.
+- Every pending app keeps its starting indicator until its readiness check has actually completed.
+- Confirmed port takeovers and shared-service force stops now run reliably after their confirmation dialogs close.
+- Docker waiting, recovery, and failure states now stay current in the status banner instead of leaving stale or misleading startup text.
+
 ## 1.2.1 (17) - Fast startup readiness
 _Date: 2026-08-03_
 
