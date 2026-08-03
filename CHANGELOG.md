@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.1 (17) - Fast startup readiness
+_Date: 2026-08-03_
+
+- Docker readiness checks no longer leave stack startup waiting after Docker is already available.
+- Already-running configured Docker containers are accepted as ready dependencies only when the exact container and configured port are active.
+- Per-app starting indicators now appear promptly instead of remaining visually stopped behind the stack progress banner.
+- Finder-launched sessions now discover common Node toolchains without loading interactive shell prompts.
+
 ## 1.2.1 (16) - Reliable stack startup
 _Date: 2026-08-03_
 
