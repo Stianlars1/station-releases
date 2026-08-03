@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.3 (19) - Reliable concurrent commands
+_Date: 2026-08-03_
+
+- Concurrent port, Docker, and diagnostic commands now finish deterministically even when several short-lived processes exit at the same time.
+- Timed commands no longer risk waiting indefinitely after Station has force-stopped an unresponsive child process.
+
 ## 1.2.2 (18) - Live stack progress
 _Date: 2026-08-03_
 
