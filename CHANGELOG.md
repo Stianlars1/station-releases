@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.2.7 (23) - Fixes where you see the problem
+_Date: 2026-08-06_
+
+- Port mismatch and port conflict warnings on an app's detail view now carry their own actions: stop the process holding the port, or open the editor to change the app's port. Previously the warning explained the problem but offered no way to resolve it, and the only working control was an unlabeled icon in the toolbar.
+- A disabled stop action now explains that runtime actions are locked until Station is activated, instead of being greyed out without a reason.
+- The sidebar toggle and the Station title now sit next to the window buttons instead of drifting in by the width of the sidebar.
+- The sidebar can be toggled with Control-Command-S, and its collapsed or expanded state is remembered between launches.
+- Startup failures caused by a dependency now name the dependencies that did not become ready, instead of reporting a generic message that read the same for every app.
+- The status pill in Command Center now opens the app that needs attention when the overall status is a failure, port mismatch, or port conflict.
+- Port mismatches and port conflicts now stay visible in the Command Center status and the menu bar icon while other apps are running. A single running app previously masked them.
+- The app toolbar's icon-only buttons now have tooltips, so the stop button says whether it stops Station's own process or a foreign one.
+- The restart tooltip no longer says "Restart the app" while the button is disabled because the app runs outside Station.
+
 ## 1.2.6 (22) - Reliable Docker ownership
 _Date: 2026-08-03_
 
