@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.10 (26) - Native title bar again
+_Date: 2026-08-07_
+
+- The sidebar toggle is the standard macOS control again, so it matches the rest of the toolbar and the title bar is one continuous surface. Moving it next to the window buttons in 1.2.7 required placing it outside the toolbar, where it could not pick up the system's toolbar styling.
+- Control-Command-S and the remembered sidebar state are unchanged.
+- Stopping a process Station does not own is now offered in the same place for every case. An app running outside Station had the action above the notice while a port conflict had it inside, so the same action moved depending on the state.
+- Stack startup now counts each app as its readiness check finishes, instead of only when a whole dependency layer completes. Starting an app with seven independent dependencies jumped straight from "Starting 8 apps." to "Starting 7 of 8 apps."; it now counts up one at a time.
+
 ## 1.2.9 (25) - Reliable stack lifecycle
 _Date: 2026-08-07_
 
