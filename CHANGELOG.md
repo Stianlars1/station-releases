@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.9 (25) - Reliable stack lifecycle
+_Date: 2026-08-07_
+
+- Station now recognises its own already-running Docker containers as valid dependencies, so a separately started `es-odin` no longer blocks the first `web-next` start.
+- Stopping a process Station does not own now acts on the exact process identity shown in the confirmation, instead of re-scanning the port afterwards. A process that exits between the confirmation and the stop can no longer hand its port to a replacement that Station would then stop by mistake.
+- Stopping an occupying process is offered only when its working directory could be verified.
+- Cancelling an in-progress start now rolls back only the resources started by that operation, without touching existing or separately started services.
+- Stop actions now clear stale failed states, explain separately started shared dependencies, and disable themselves when nothing remains to stop.
+- Global stop can explicitly include verified external processes after confirmation, while preserving any process whose identity cannot be safely verified.
+- Group start and stop are now enabled independently, so a partially running group can still be stopped.
+
 ## 1.2.8 (24) - Aligned title bar
 _Date: 2026-08-07_
 
