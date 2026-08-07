@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.8 (24) - Aligned title bar
+_Date: 2026-08-07_
+
+- The sidebar toggle and the Station title now sit level with the window buttons. They were drawn 12pt too high in 1.2.7.
+
 ## 1.2.7 (23) - Fixes where you see the problem
 _Date: 2026-08-06_
 
