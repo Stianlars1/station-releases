@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.11 (27) - Reliable runtime state
+_Date: 2026-09-07_
+
+- Stopping an app now waits for its entire process group, including children that outlive the original command. PostgreSQL uses a verified, clean shutdown instead of automatic force-killing.
+- Station tracks Docker and detached Compose resources by container identity, including workers without ports and containers left running after a partially failed start.
+- Container readiness checks verify the required containers, TCP port mappings, and application health. Separate health-check ports are supported, and stale scans cannot bring stopped apps back into the status display.
+- Cancelling startup preserves replacement and pre-existing containers. Global stop orders apps before their dependencies, preserves dependencies when a stop fails, and counts confirmed external stops correctly.
+- Port conflicts clear when the correct app takes over. Running apps no longer hide other apps' port problems, and Station-owned apps on unexpected ports use the correct stop action.
+- The status menu lists every enabled app and continues updating while it is open. Starting Docker cannot replace an operation already in progress.
+- Quitting Station waits for owned processes and resources to stop. An app remains in the catalog if stopping it before deletion fails.
+
 ## 1.2.10 (26) - Native title bar again
 _Date: 2026-08-07_
 
