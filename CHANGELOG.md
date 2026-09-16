@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.13 (29) - Delete after forced stop
+_Date: 2026-09-16_
+
+- Deleting a running app that another running app depends on now finishes the deletion after you confirm "Force stop". Before, Station stopped the app and silently kept it in the catalog, so a second Delete was needed. Cancelling the forced stop keeps the app and drops the pending deletion, so a later forced stop does not remove it.
+
 ## 1.2.12 (28) - Accurate start failures
 _Date: 2026-09-16_
 
