@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.12 (28) - Accurate start failures
+_Date: 2026-09-16_
+
+- A command that exits before its health check is now reported as "App process exited" with the real exit code, instead of "did not become ready before the health-check timeout". The stored exit code was the raw wait status before (65024 for `exit 254`); it is now the code a shell would show.
+- An app Station started that listens on a different port than configured is reported as a port mismatch with a one-click "Use port N" proposal. Its notice says "Stop" for Station's own process instead of "Stop external", and the message stays visible instead of being dropped.
+- Stack discovery reads the dev port from `vite.config.*`, so "Review proposed changes" no longer proposes Vite's default 5173 for a project pinned to another port. A port Station has observed the app listening on always wins over the manifest.
+- Troubleshooting cards clear on their own once the app is verified healthy, instead of waiting for "Check again".
+- Starting a stack that waits for Docker no longer prints "Station is starting …" twice or leaves an empty run log per app.
+
 ## 1.2.11 (27) - Reliable runtime state
 _Date: 2026-09-07_
 
