@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.14 (30) - Ambient background
+_Date: 2026-09-16_
+
+- New Background setting under Settings > Appearance. Flat keeps the previous look. Glow, now the default, carries the activity banner's tint into the top of the window and fades it out, so the hard edge between the banner and the page is gone. Aurora adds soft aqua and violet accents.
+- "Color the background by app status" tints the glow green when every app is ready, orange for external or port problems, and red on a failure. Off by default.
+- "Animate the background" adds a slow breath to the glow. It stays still when Reduce Motion is on in System Settings.
+- The activity banner slides in and out, its outcome icon settles in instead of snapping, status pills crossfade between states, and Command Center cards highlight their border on hover.
+
 ## 1.2.13 (29) - Delete after forced stop
 _Date: 2026-09-16_
 
