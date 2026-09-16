@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.15 (31) - Inspector shows the ambient background
+_Date: 2026-09-16_
+
+- The inspector column no longer cuts the Glow and Aurora backgrounds off with a hard vertical edge. It shows the same ambient surface as the rest of the window.
+
 ## 1.2.14 (30) - Ambient background
 _Date: 2026-09-16_
 
